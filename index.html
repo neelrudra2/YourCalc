@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YourCalc</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>YourCalc</h1>
+      </header>
+
+      <main>
+        <div class="form-container">
+          <form id="calcForm">
+            <label for="shape">Select Shape:</label>
+            <select id="shape" name="shape">
+              <option value="Select" selected>Select</option>
+              <option value="triangle">Triangle</option>
+              <option value="circle">Circle</option>
+              <option value="rectangle">Rectangle</option>
+              <option value="square">Square</option>
+              <option value="cylinder">Cylinder</option>
+              <option value="trapezium">Trapezium</option>
+              <option value="ellipse">Ellipse</option>
+            </select>
+
+            <label for="property">Select Property:</label>
+            <select id="property" name="property"></select>
+
+            <div id="inputFields"></div>
+
+            <div class="buttons">
+              <button type="submit">Submit</button>
+              <button type="button" id="resetBtn">Reset</button>
+            </div>
+          </form>
+
+          <div id="result"></div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
